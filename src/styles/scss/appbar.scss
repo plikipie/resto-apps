@@ -1,0 +1,41 @@
+// Header
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 52px;
+    align-items: center;
+    transition: min-height 0.3s;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--primary-color);
+    .nav__title {
+        display: grid;
+        font-size: 1.3em;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--text-color);
+    }
+}
+
+.menu ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+    li {
+        display: block;
+        background-color: var(--secondary-color);
+        padding: 7.5px;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        text-align: center;
+        border-radius: 5px;
+        transition: 0.8s;
+        cursor: pointer;
+    }
+    li:hover {
+        background-color: var(--pseudo-color);
+        color: var(--primary-color);
+        transition: 0.8s;
+    }
+}

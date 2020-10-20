@@ -1,0 +1,10 @@
+.headline {
+  display: flex;
+  min-height: 480px;
+  width: 100%;
+}
+
+.headline .headline__title {
+  text-align: center;
+}
+/*# sourceMappingURL=content.css.map */
