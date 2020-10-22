@@ -4,7 +4,7 @@ import "../styles/css/appbar.css";
 import "../styles/css/jumbotron.css";
 import "../styles/css/content.css";
 import "../styles/css/footer.css";
-
+import "../scripts/scroll.js";
 import data from "../DATA.json";
 
 // var xhttp = new XMLHttpRequest();

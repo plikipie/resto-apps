@@ -7,9 +7,9 @@
     transition: min-height 0.3s;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: var(--primary-color);
     position: fixed;
     width: 100%;
+    z-index: 999;
     .nav__title {
         display: grid;
         font-size: 1.3em;
