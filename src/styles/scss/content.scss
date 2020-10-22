@@ -18,13 +18,16 @@
 
 .main__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 40px 30px;
     justify-content: center;
     margin: 32px auto auto;
     text-align: left;
     overflow: auto;
     padding: 20px 30px 20px 30px;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 .main__card {
@@ -33,9 +36,11 @@
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0.2px solid #ffffff;
+    border: 0.2px solid var(--text-color);
     overflow: hidden;
     transition: 0.8s;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     .card__tagline {
         padding: 16px 32px 36px 32px;
         margin-left: 5px auto;
@@ -63,13 +68,14 @@
 }
 
 .main__card:hover {
-    -webkit-box-shadow: -1px -1px 31px -5px rgba(32, 171, 171, 1);
-    -moz-box-shadow: -1px -1px 31px -5px rgba(32, 171, 171, 1);
-    box-shadow: -1px -1px 31px -5px rgba(32, 171, 171, 1);
+    -webkit-box-shadow: 0px -1px 17px 3px rgba(19, 59, 92, 1);
+    -moz-box-shadow: 0px -1px 17px 3px rgba(19, 59, 92, 1);
+    box-shadow: 0px -1px 17px 3px rgba(19, 59, 92, 1);
     transition: 0.8s;
 }
 
 .card__img {
     width: 100%;
     border-radius: 5px;
+    min-height: 100px;
 }

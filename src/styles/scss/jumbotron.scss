@@ -22,15 +22,15 @@
 
 .hero__title {
     margin-top: 18px;
-    color: #ffffff;
-    font-size: 44px;
+    color: var(--text-color);
+    font-size: 38px;
     font-weight: 700;
 }
 
 .hero__tagline {
     margin-top: 18px;
     margin-bottom: 18px;
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 20px;
     font-weight: 100;
 }
