@@ -1,3 +1,63 @@
+.first__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 669px;
+    background-color: var(--primary-color);
+    .content__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        align-items: center;
+        padding-left: 20px;
+        max-width: 980px;
+        min-height: 550px;
+    }
+    .img__content {
+        width: 100%;
+        min-height: 500px;
+        background-image: url("/images/heros/hero-image_1.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .content__tagline {
+        min-height: 450px;
+    }
+    .content__name {
+        font-size: 24px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .name__title {
+        font-size: 34px;
+        font-weight: 700;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .content__description1 {
+        font-size: 14px;
+        font-weight: 100;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .content__description2 {
+        font-size: 14px;
+        font-weight: 100;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .content__description3 {
+        font-size: 14px;
+        font-weight: 100;
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+
 .content__title {
     min-height: 680px;
     width: 100%;
