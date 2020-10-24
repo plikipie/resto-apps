@@ -1,35 +1,31 @@
 .nav {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
   min-height: 52px;
-  align-items: center;
-  transition: min-height 0.3s;
-  padding-left: 15px;
-  padding-right: 15px;
   position: fixed;
+  justify-content: space-around;
   width: 100%;
   z-index: 999;
+  padding: 20px 0;
 }
 
-.nav .nav__title {
-  display: grid;
+.nav .nav__logo {
+  display: flex;
   font-size: 1.3em;
-  margin-left: auto;
-  margin-right: auto;
   color: var(--text-color);
+  align-items: center;
 }
 
-.menu ul {
-  display: grid;
+.menu {
+  display: flex;
   list-style-type: none;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 5px;
+  justify-content: space-between;
+  width: 48%;
+  letter-spacing: 3px;
 }
 
-.menu ul li {
+.menu li {
   background-color: var(--pseudo-color);
-  padding: 7.5px;
+  padding: 10px;
   text-transform: uppercase;
   font-size: 1.1em;
   text-align: center;
@@ -38,9 +34,58 @@
   cursor: pointer;
 }
 
-.menu ul li:hover {
+.menu li:hover {
   background-color: var(--secondary-color);
   color: var(--text-color);
   transition: 0.8s;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: var(--text-color);
+  border-radius: 3px;
+  transition: all 0.5s;
+  z-index: 999;
+}
+
+/* Hamburger Menu animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
 }
 /*# sourceMappingURL=appbar.css.map */

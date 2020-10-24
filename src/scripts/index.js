@@ -4,5 +4,7 @@ import "../styles/css/appbar.css";
 import "../styles/css/jumbotron.css";
 import "../styles/css/content.css";
 import "../styles/css/footer.css";
+import "../styles/css/responsive.css";
 import "../scripts/scroll.js";
 import "../scripts/content.js";
+import "../scripts/toggle.js";

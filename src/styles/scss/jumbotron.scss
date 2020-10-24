@@ -14,7 +14,7 @@
 
 .hero__wrap {
     margin: 0 auto;
-    max-width: 580px;
+    max-width: 58%;
     border-radius: 5px;
     background-color: #443b3b;
     opacity: 0.8;
@@ -34,4 +34,5 @@
     color: var(--text-color);
     font-size: 20px;
     font-weight: 100;
+    padding: 10px 20px;
 }
