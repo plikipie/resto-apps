@@ -1,25 +1,24 @@
 .first__content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   min-height: 669px;
   background-color: var(--primary-color);
 }
 
 .first__content .content__wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 20px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
   padding-left: 20px;
-  max-width: 980px;
+  max-width: 1200px;
   min-height: 550px;
 }
 
 .first__content .img__content {
   width: 100%;
+  height: auto;
   min-height: 500px;
   background-image: url("/images/heros/hero-image_1.jpg");
   background-position: center;
@@ -29,6 +28,10 @@
 
 .first__content .content__tagline {
   min-height: 450px;
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .first__content .content__name {
