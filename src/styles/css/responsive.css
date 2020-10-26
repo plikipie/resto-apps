@@ -10,9 +10,11 @@
     align-items: center !important;
   }
   .img__content {
-    width: 60.6% !important;
+    width: 100% !important;
     height: auto;
     margin-top: 20px;
+    object-position: center;
+    object-fit: center;
   }
   .content__tagline {
     width: 75%;
