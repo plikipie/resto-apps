@@ -37,6 +37,7 @@
 
 @media screen and (max-width: 768px) {
   .menu {
+    display: none;
     width: 50%;
     order: -1;
     justify-items: end;
