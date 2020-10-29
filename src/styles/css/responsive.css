@@ -42,7 +42,7 @@
     order: -1;
     justify-items: end;
   }
-  .menu-toggle {
+  .nav #hamburger {
     display: flex;
   }
   .nav ul {
@@ -61,6 +61,15 @@
     transition: all 1s;
     opacity: 0;
     background-color: var(--secondary-color);
+  }
+  .nav ul .closebtn {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+    color: var(--text-color);
   }
   .nav ul.slide {
     opacity: 1;
