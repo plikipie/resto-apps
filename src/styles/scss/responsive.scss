@@ -44,6 +44,7 @@
     }
     .nav #hamburger {
         display: flex;
+        padding: 18px;
     }
     .nav ul {
         display: flex;
@@ -65,10 +66,12 @@
             display: flex;
             position: absolute;
             top: 0;
-            right: 0;
+            right: 60px;
             font-size: 36px;
             margin-left: 50px;
             color: var(--text-color);
+            align-content: center;
+            padding: 18px;
         }
     }
     .nav ul.slide {
